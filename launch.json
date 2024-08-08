@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/app.py",  // Path to your Flask application
+            "console": "integratedTerminal",
+            "env": {
+                "FLASK_APP": "${workspaceFolder}/app.py",  // Path to your Flask application
+                "FLASK_ENV": "development",  // Enables development mode (auto-reloading, etc.)
+                "OPENAI_API_KEY": "${env:OPENAI_API_KEY}"  // Loads the API key from environment variables
+            },
+            "justMyCode": true
+        }
+    ]
+}
